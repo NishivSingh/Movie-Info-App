@@ -1,6 +1,6 @@
 :root{
-    --primary-color: rgb(12, 75, 11);
-    --secondary-color: rgb(75, 151, 42);
+    --primary-color: rgb(0 43 54);
+    --secondary-color: rgb(15 65 78);
 }
 
 *{
@@ -14,7 +14,7 @@ body{
 }
 
 header{
-    padding: 1rem;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,23 +23,23 @@ header{
 #home{
     padding: 10px;
     border-radius: 9px;
+    color: aquamarine;
 }
 #home:hover {
     cursor: pointer;
-    background-color: var(--primary-color);
 }
 .search{
     background-color: transparent;
-    width: 25rem;
+    width: 20rem;
     border: 2px solid var(--primary-color);
     border-radius: 75px;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    color: white;
+    color: aquamarine;
 }
 
 .search::placeholder{
-    color: white;
+    color: aquamarine;
 }
 
 .search:focus{
@@ -97,7 +97,7 @@ main{
     color: rgb(203, 19, 19);
 }
 .movie-info h3{
-    color: black;
+    color: aquamarine;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .overview{
@@ -123,3 +123,12 @@ main{
 .movie:hover .overview{
     transform: translateY(0);
 }
+
+@media only screen and (max-width: 600px) {
+    .search{
+      width: 100%;
+    }
+    .fa-solid{
+        font-size: 25px;
+    }
+  }
